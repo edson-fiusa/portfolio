@@ -1,0 +1,103 @@
+      body{
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #0077b6, #0096c7);
+      color: #fff;
+    }
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      margin: 10px 0;
+      font-size: 2rem;
+    }
+
+    .habilidades {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 10px;
+      gap: 20px;
+    }
+    .habilidades {
+      display: block;
+      flex: 1 30px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      background: #fff;
+      transform: translateX(0);
+      opacity: 0;
+      transition: all 1.5s ease;
+      align-items: center;
+      text-align: center;
+    }
+    .habilidades.left {
+      transform: translateX(-100%);
+    }
+    .habilidades.right {
+      transform: translateX(100%);
+    }
+    .habilidades.show {
+      transform: translateX(0);
+      opacity: 1;
+    }
+   
+    .projects {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 50px 20px;
+      gap: 20px;
+    }
+    .project {
+      flex: 1 1 300px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      background: #fff;
+      transform: translateX(0);
+      opacity: 0;
+      transition: all 2s ease;
+    }
+    .project.left {
+      transform: translateX(-100%);
+    }
+    .project.right {
+      transform: translateX(100%);
+    }
+    .project.show {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #0077b6;
+      color: #fff;
+    }
+    footer p {
+      margin: 5px 0;
+    }
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    a{
+      text-decoration: none;
+      color: #333;
+    }
+    a:hover {
+     color: #0077b6;
+    }
