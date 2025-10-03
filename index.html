@@ -149,15 +149,12 @@
   </footer>
 
   <script>
-   const habilidades = document.querySelectorAll(".habilidades");
-    window.addEventListener("scroll", () => {
-      habilidades.forEach(p => {
-        const position = p.getBoundingClientRect().top;
-        if (position < window.innerHeight - 50) {
-          p.classList.add("show");
-        }
-      });
-    });
+   document.addEventListener("DOMContentLoaded", () => {
+  const habilidades = document.querySelectorAll(".habilidades");
+  habilidades.forEach(p => {
+    p.classList.add("show");
+  });
+});
 
     const projects = document.querySelectorAll(".project");
     window.addEventListener("scroll", () => {
